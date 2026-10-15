@@ -22,4 +22,4 @@ Input: exercise id like `l7p19`. Source lives in `exercises/<id>/`. MPI is assum
    - Edge cases: `comm_sz == 1`, first/last rank, ring wraparound.
    - Missing `MPI_Finalize`, MPI calls before `MPI_Init`, compiler warnings.
    - Nondeterministic per-rank print order is expected; flag only if the spec requires order.
-4. **Report** each finding with severity, line, evidence (warning or observed output) and a fix. State what was run and what passed. Don't modify the exercise unless asked. Run `make clean` afterwards.
+4. **Report** each finding with severity, line, and evidence (warning or observed output). Only point out the possible issue: NEVER give the fix, corrected code, or a suggested solution, and no hints on how to resolve it. State what was run and what passed. Don't modify the exercise unless asked. Run `make clean` afterwards.
